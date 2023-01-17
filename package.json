@@ -2,6 +2,7 @@
   "name": "vite-mf-starter",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/es-devkit/mf-templates.git"
