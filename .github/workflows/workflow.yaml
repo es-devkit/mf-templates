@@ -2,7 +2,7 @@ on: push
 
 jobs:
   release_job:
-    uses: ./.github/actions/release.yaml
+    uses: ${{ github.repository }}/.github/actions/release.yaml@main
     secrets:
       GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
       NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
