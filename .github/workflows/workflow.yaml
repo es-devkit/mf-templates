@@ -8,6 +8,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Release using Semantic Release
         uses: ./github/actions/release.yaml
-        secrets:
-          GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
+        with:
+          secrets:
+            GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
+            NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
