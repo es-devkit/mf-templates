@@ -1,0 +1,6 @@
+on: push
+
+jobs:
+  release_job:
+    uses: ./.github/workflows/release.yaml
+    secrets: inherit
