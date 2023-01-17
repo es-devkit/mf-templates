@@ -2,8 +2,7 @@ on: push
 
 jobs:
   release_job:
-    - release-using-semantic-release
-      uses: ./.github/actions/release.yaml
-      secrets:
-        GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
+    uses: ./.github/actions/release.yaml
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
