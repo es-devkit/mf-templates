@@ -2,7 +2,7 @@ on: push
 
 jobs:
   release_job:
-    - name: Release using Semantic Release
+    - release-using-semantic-release
       uses: "./.github/workflows/release.yaml"
       secrets:
         GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
