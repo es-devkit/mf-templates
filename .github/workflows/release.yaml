@@ -1,10 +1,10 @@
 on:
   workflow_call:
     secrets:
-      GITHUB_TOKEN:
+      GA_GITHUB_TOKEN:
         description: "The GitHub token to use for the release"
         required: true
-      NPM_TOKEN:
+      GA_NPM_TOKEN:
         description: "The NPM token to use for the release"
         required: true
 jobs:
@@ -23,5 +23,5 @@ jobs:
             @semantic-release/changelog@6.0.2
             @semantic-release/git@10.0.1
         env:
-          GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ inputs.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ inputs.GA_GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ inputs.GA_NPM_TOKEN }}
