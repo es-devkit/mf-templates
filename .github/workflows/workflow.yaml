@@ -9,5 +9,5 @@ jobs:
       - name: Release using Semantic Release
         uses: ${ github.repository }/.github/workflows/release.yaml@main
         secrets:
-          GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
+          GA_GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
+          GA_NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
