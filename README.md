@@ -1,6 +1,8 @@
+![semantic-release: angular](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)
+
 # vite-mf-starter
 
-!! This project is currently under development and is not ready to be used !! 
+!! This project is currently under development and is not ready to be used !!
 
 A starter project for a micro frontend using vite, single-spa, federated modules and react.
 
@@ -41,7 +43,7 @@ This removes the immediate connection between human emotions and version numbers
 
 This project uses [tailwindcss](https://tailwindcss.com/) for styling. Tailwind is a utility-first CSS framework for rapidly building custom user interfaces.
 
-Writing your styles in scss is supported by [postcss](https://github.com/postcss/postcss) 
+Writing your styles in scss is supported by [postcss](https://github.com/postcss/postcss)
 
 ## Browser Support
 
