@@ -1,0 +1,11 @@
+on: push
+
+jobs:
+  release_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release using Semantic Release
+        uses: ./.github/actions/release
+        with:
+          GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
