@@ -1,10 +1,10 @@
 on:
   workflow_call:
     secrets:
-      GITHUB_TOKEN:
+      GA_GITHUB_TOKEN:
         description: "The GitHub token to use for the release"
         required: true
-      NPM_TOKEN:
+      GA_NPM_TOKEN:
         description: "The NPM token to use for the release"
         required: true
 jobs:

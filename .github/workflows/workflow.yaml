@@ -3,6 +3,4 @@ on: push
 jobs:
   release_job:
     uses: ./.github/workflows/release.yaml
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GA_GITHUB_TOKEN }}
-      NPM_TOKEN: ${{ secrets.GA_NPM_TOKEN }}
+    secrets: inherit
